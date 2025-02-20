@@ -1,0 +1,137 @@
+/* Global Reset and Scroll Snap */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light cyan for a calming background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background: #00796b;  /* Teal */
+    color: #fff;
+    padding: 20px 0;
+    scroll-snap-align: start;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin-left: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url(./HeroBackground.webp);
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    scroll-snap-align: start;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #f57c00;  /* Vibrant orange */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ef6c00;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 40px 0;
+    background: #fff;
+    scroll-snap-align: start;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .feature {
+    flex: 1 1 30%;
+    background: #fce4ec;  /* Soft pink */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature h3 {
+    margin-bottom: 10px;
+    color: #c2185b;  /* Deep pink */
+  }
+  
+  .feature p {
+    font-size: 16px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    scroll-snap-align: start;
+  }
+  

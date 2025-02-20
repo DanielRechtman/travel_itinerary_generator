@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Website</title>
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1>Travel Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Explore the World</h2>
+      <p>Discover amazing destinations with us!</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container features-container">
+      <div class="feature">
+        <h3>Beautiful Beaches</h3>
+        <p>Relax on the pristine beaches of exotic locations.</p>
+      </div>
+      <div class="feature">
+        <h3>Mountain Adventures</h3>
+        <p>Experience breathtaking mountain landscapes and trails.</p>
+      </div>
+      <div class="feature">
+        <h3>Cultural Tours</h3>
+        <p>Immerse yourself in diverse cultures and local flavors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Travel Website. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
