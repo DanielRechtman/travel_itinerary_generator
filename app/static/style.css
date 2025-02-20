@@ -5,6 +5,8 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
   body {
@@ -19,7 +21,7 @@ html, body {
   /* Container */
   .container {
     width: 90%;
-    margin: auto;
+    margin: auto; 
   }
   
   /* Header */
@@ -28,6 +30,8 @@ html, body {
     color: #fff;
     padding: 20px 0;
     scroll-snap-align: start;
+    
+    
   }
   
   .header-container {
